@@ -1,3 +1,16 @@
 body {
     background: white;
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+#div-inicial{
+    position: fixed;
+    height: 12px;
+    width: 100%;
+    background: orange;
+}
+
+h1{
+    padding-top: 15px;
 }
