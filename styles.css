@@ -1,16 +1,97 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
 body {
-    background: white;
-    margin: 0 auto;
-    padding: 0 auto;
+    display: inline;
+    background-color: ;
 }
 
-#div-inicial{
-    position: fixed;
-    height: 12px;
+.header-main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
-    background: orange;
 }
 
-h1{
-    padding-top: 15px;
+.main-frame-perfil{
+    display: flex;
+    justify-content: left;
+    width: 50%;
+    height: 240px;
+    background: #ff00004d;
 }
+
+.frame-perfil:hover {
+    /* width: 100%; */
+    transform: scaleX(20);
+}
+
+.frame-perfil:hover .descricao-perfil{
+    position: static;
+}
+
+.frame-perfil{
+    /* background: rgba(255, 0, 0, 0.628); */
+    transition: transform 250ms ease-in;
+    background: linear-gradient(147.62deg, #FF0000 -10.29%, #F77A69 17.59%, rgba(53, 64, 159, 0.713542) 53.26%, rgba(134, 85, 235, 0.49898) 87.87%, rgba(188, 90, 90, 0) 113.01%);
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 25px;
+    padding: 16px;
+    margin: 16px;
+    border-radius: 20px;
+}
+
+.span-fp{
+    /* Resposavel por esconder a imagem */
+    display: flex;
+    overflow: hidden;
+    /* Alinhar ao Cento os items */
+    align-items: center;
+    justify-content: center;
+    /* Outros ajustes */
+    border-radius: 50%;
+    width: 158px;
+    height: 158px;
+    background-color: white;
+    margin: 10px;
+    box-shadow: 0px 0px 8px #aaaaaa;
+}
+
+.fp{
+    margin: 0;
+    padding: 0;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    font-size: 100%;
+}
+
+.descricao-perfil {
+    /* background: rgba(0, 0, 0, 0.277); */
+    width: 300px;
+    height: 170px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: -1000px;
+}
+
+
+
+.perfil-titulo {
+    font-family: 'Courier New', Courier, monospace;
+    /* background: violet; */
+}
+
+.perfil-paragrafo {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* background: #F77A69; */
+}
+
+
